@@ -1,0 +1,287 @@
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/banner03">
+
+            <LinearLayout
+                android:id="@+id/indicatorLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:addStatesFromChildren="true"
+                android:background="#4c000000"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.chinausky.lanbowan.view.custom.AlwaysMarqueeTextView
+                    android:id="@+id/tv_property_announcement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                        android:id="@+id/wodechepai"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/wodechepai">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|left"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/wodechepai" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="10dp"
+                            android:text="我的车牌"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+                    <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                        android:id="@+id/fangke"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/fangke">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|left"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/fangke" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="10dp"
+                            android:text="访客"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                        android:id="@+id/menjingka"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/menjinka">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="start|left"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/mengjingka" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="10dp"
+                            android:text="门禁卡"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                            android:id="@+id/jiating"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/jiating">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start|left"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/jiating" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|right"
+                                android:layout_margin="10dp"
+                                android:text="家庭"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+                        <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                            android:id="@+id/weixiufuwu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/weixiufuwu">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start|left"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/weixiufuwu" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|right"
+                                android:layout_margin="10dp"
+                                android:text="维修服务"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                android:id="@+id/jiankong"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/jiankong">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start|left"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/jiankong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:text="监控"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+            <com.chinausky.lanbowan.view.custom.ClickFrameLayout
+                android:id="@+id/banghzuzhongxing"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/bangzhuzhongxing">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start|left"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/banghzuzhongxing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:text="帮助中心"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </com.chinausky.lanbowan.view.custom.ClickFrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--</ScrollView>-->

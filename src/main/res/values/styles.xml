@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--Toolbar颜色 也是多任务切换的标题颜色-->
+        <item name="colorPrimary">@color/base</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--下划线 提示等一些组件的 着色-->
+        <item name="colorAccent">@color/base</item>
+
+    </style>
+
+    <style name="StartAppTheme" parent="AppTheme">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowBackground">@drawable/app_start</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

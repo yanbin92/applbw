@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">蓝泊湾</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_loading">蓝泊湾</string>
+
+    <string name="banner_text">物业公告：恳请小区内养犬的业主，要自觉遵守《江西省严格限制养犬规定》，做到在园区内遛狗要挂狗牌、束狗链，并由成年人牵领拴狗绳，及时清理狗粪，不得侵扰他人的正常生活，定期为爱犬注射狂犬疫苗。
+</string>
+
+
+    <!--星网锐捷-->
+    <string name="loading">加载中, 请稍候&#8230;</string>
+
+    <string name="home_call">呼叫</string>
+    <string name="home_account">账号</string>
+    <string name="home_setting">配置</string>
+    <string name="home_exit">退    出</string>
+    <string name="home_input_hint">输入对方号码</string>
+    <string name="home_input_error">请输入正确的号码</string>
+    <string name="home_dialog_username_title">请输入用户名</string>
+    <string name="home_dialog_username_empty">用户名不能为空！</string>
+    <string name="home_dialog_username_toolong">输入的用户名太长！</string>
+
+    <string name="account_delete">删除</string>
+    <string name="account_num">账号</string>
+    <string name="account_passwd">密码</string>
+    <string name="account_host">域名</string>
+    <string name="account_port">端口</string>
+    <string name="account_add">添加</string>
+    <string name="account_back">返回</string>
+
+    <string name="setting_echo">回声消除</string>
+    <string name="setting_echo_delay">回声时延</string>
+    <string name="setting_save">保存</string>
+    <string name="setting_exit">退出</string>
+
+    <string name="call_log_status_received">已接</string>
+    <string name="call_log_status_missed">未接</string>
+    <string name="call_log_status_dialed">已拨</string>
+    <string name="call_log_status_dialed_no_accept">对方未接通</string>
+    <string name="call_log_status_unknown">未知</string>
+
+    <string name="call_operator_accept">接    听</string>
+    <string name="call_operator_accept_video">视频接听</string>
+    <string name="call_operator_accept_audio">音频接听</string>
+    <string name="call_operator_reject">拒    接</string>
+    <string name="call_operator_hangup">挂    断</string>
+    <string name="call_operator_unlock">开    锁</string>
+    <string name="call_operator_snapshot">抓    拍</string>
+    <string name="call_operator_back">返    回</string>
+
+    <string name="call_operator_video">视频通话</string>
+    <string name="call_operator_micro">话筒静音</string>
+    <string name="call_operator_speaker">免提</string>
+
+    <string name="call_incall_prompt_ringing">来电...</string>
+    <string name="call_incall_prompt_dialing">呼叫中</string>
+    <string name="call_incall_prompt_monitor">接入</string>
+    <string name="call_incall_prompt_hold">呼叫保持</string>
+    <string name="call_incall_prompt_talking">通话中</string>
+    <string name="call_incall_prompt_videocall_request">视频呼叫请求</string>
+    <string name="call_incall_prompt_videocall_request_issue">是否接受视频通话?</string>
+    <string name="call_incall_prompt_videocall_request_accept">接受</string>
+    <string name="call_incall_prompt_videocall_request_decline">拒绝</string>
+
+    <string name="call_incall_prompt_unlock_success">开锁成功</string>
+    <string name="call_incall_prompt_unlock_fail">开锁失败</string>
+
+    <string name="call_incall_prompt_no_registered">请检查网络连接或注册状态</string>
+    <string name="call_incall_prompt_device_not_found">未找到对方设备</string>
+    <string name="call_incall_prompt_device_busy">对方设备忙,请稍后再试</string>
+
+    <string name="snapshot_saveto">已保存至 : \n</string>
+    <string name="snapshot_failed">抓拍失败</string>
+
+    <string name="sip_registration_none">未注册</string>
+    <string name="sip_registration_progress">正在注册</string>
+    <string name="sip_registration_ok">注册成功</string>
+    <string name="sip_registration_cleared">RegistrationCleared</string>
+    <string name="sip_registration_failed">注册失败</string>
+
+
+    <string name="title_activity_owner_service">OwnerServiceActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <!-- Strings related to login -->
+    <string name="prompt_user_name">账号</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_up">注册</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_username">账号不正确</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">账号不能为空</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- Strings related to sign up -->
+    <string name="title_login">登录</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="prompt_phone">手机号码</string>
+    <string name="prompt_name">姓名</string>
+    <string name="prompt_gender">性别</string>
+    <string name="prompt_owner">业主</string>
+    <string name="prompt_set_password">设置密码</string>
+    <string name="prompt_confirm_password">确认密码</string>
+    <string name="hint_phone">请输入手机号码</string>
+    <string name="hint_name">请输入真实姓名</string>
+    <string name="hint_set_password">请输入登录密码</string>
+    <string name="hint_confirm_password">请重复输入登录密码</string>
+    <string name="action_submit">提交</string>
+    <string name="error_phone_required">号码不能为空</string>
+    <string name="error_invalid_phone">号码不正确</string>
+    <string name="error_name_required">姓名不能为空</string>
+    <string name="error_password_required">密码不能正确,请填写6位以上</string>
+    <string name="error_confirm_password_required">确认密码不能为空</string>
+    <string name="error_different_password">两次密码不一致</string>
+    <string name="error_gender_required">性别未选择</string>
+    <string name="error_owner_required">业主情况未选择</string>
+
+    <!-- Strings related to help -->
+    <string name="estate_center_title">物业管理中心联系电话：</string>
+    <string name="room_deliver_title">交房流程</string>
+    <string name="property_permits_title">产权证办理指南（仅供参考）</string>
+    <string name="convenience_guide_title">便民指南</string>
+    <string name="owner_knows_title">业主须知</string>
+    <string name="owner_feedback_title">业主反馈</string>
+    <string name="estate_center_text">0793—2666868/2666789</string>
+    <string name="property_permits_text">产权证办理指南（仅供参考）</string>
+    <string name="room_deliver_text">
+        1、业主持身份证、《商品房买卖合同》、全部房款发票原件到广丰区桑园路“蓝泊湾”6号楼办理结算，换取结算发票；\n
+        2、由开发商出具进户单；\n
+        3、业主持进户单、身份证、《商品房买卖合同》、结算发票到物业公司办理交房；\n
+        4、签署物业服务协议；\n
+        5、业主交纳物业费、排渣等费用；\n
+        6、领取钥匙；\n
+        7、物业工作人员陪同业主验房；
+    </string>
+    <string name="convenience_guide_text">
+        热线服务电话：\n
+        报时    12117\n
+        天气预报    12121\n
+        电话号码查询    114\n
+        邮政客服中心    0793-2622030 \n
+        供电查询    0793-2659601 \n
+        高铁       0793-（订票）95105105（客服）12306 \n
+        电信      10000 \n
+        广电       0793-2652574 \n
+        自来水    0793-2626652
+    </string>
+    <string name="owner_knows_text">
+        1、收楼程序\n
+        1.1业主办理入户收楼时应携带下列有关资料和费用：\n
+        1.1.1发展商售楼处所开具的《交房通知单》、《业主入户付款清单一览表》。\n
+        1.1.2业主之身份证及复印件。\n
+        1.1.3购买物业单元之合同原件。\n
+        1.1.4业主应交之各项相关费用。\n
+        1.1.5受托人之身份证及复印件（若委托收楼）。\n
+        1.2至物业管理中心办理入户手续，填写相关资料，并缴纳物业管理费及其他费用。\n
+        1.3业主收楼交付费用\n
+        根据公约规定，所有业主都应在接收单位前依时交付以下费用： \n
+        1.3.1相当于1 2个月之首期管理费。 \n
+        1.3.2二次装修建筑垃圾清运费。 \n
+        1.4物业管理中心将下列资料及物件交予业主签收：\n
+        1.4.1业主临时公约、业主手册、住宅使用说明书、住宅质量保证书等。\n
+        1.4.2业主对所属单元按验收表格进行逐项验收并签收、如发现须返修、整改之项目 可与物业管理中心联系。 \n
+        1.4.3单元钥匙／信报箱钥匙。\n
+        2、迁入程序\n
+        2.1业主／住户于二次装修完成并通过验收合格后，可随时至物业管理中心办理入住手续。\n
+        2.2业主／住户迁入新居集中运送家具或大件物品时，须事先通知物业管理中心，以便 物业管理申心为您提供协助。\n
+        2.3业主／住户须负责清卸搬运后遗留于共用部位的杂物。\n
+        2.4搬运期间，业主／住户和搬运公司均有责任确保物业共用通道之畅通及承担因损坏 物业共用设施设备之赔偿费用。\n
+        3．使用须知\n
+        3.1居住\n
+        3.1.1按江西省户籍管理条例规定，凡在贵处居住的外籍人士或承租人均需要到公安 机关办理登记手续或居住证。\n
+        3.1.2业主名下物业，其使用性质属“住宅”的，故业主／住户均无权使用本物业开设 公司，作为展示、加工、仓储场所和游戏、娱乐活动的经营地点等非住宅用途。\n
+        3.2物业外观\n
+        3.2.1保持物业高尚的整体形象，业主／住户不得擅自在外墙及窗户、楼梯厅等共用部 位安装涉及其行业、职业、工商业及任何有商业行为的招牌和任何广告或标志。\n
+        3.2.2业主／住户不得以任何方式改变物业外貌，包括将窗户及外墙作任何更改或封闭，不得在共用部位摆放物品等，任何在公共部位摆放的物品，物业管理中心将予以清除。
+    </string>
+    <string name="owner_feedback_text">业主反馈</string>
+
+    <string name="updated_time">更新于2015—11—20</string>
+
+</resources>

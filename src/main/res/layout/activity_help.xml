@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/android_base"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.chinausky.lanbowan.view.custom.ClickLinearLayout
+                android:id="@+id/ll_convenient_phone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/estate_center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/help_estate_center_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="物业电话"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/convenient_phone_unselected"/>
+            </com.chinausky.lanbowan.view.custom.ClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/android_base"/>
+
+            <com.chinausky.lanbowan.view.custom.ClickLinearLayout
+                android:id="@+id/ll_property_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/owner_knows"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="业主须知"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/property_certificate_selected"/>
+            </com.chinausky.lanbowan.view.custom.ClickLinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/android_base"/>
+
+        <com.chinausky.lanbowan.view.custom.ClickLinearLayout
+            android:id="@+id/ll_provide_house"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/room_deliver"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="交房流程"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:src="@drawable/provide_house_selected"/>
+        </com.chinausky.lanbowan.view.custom.ClickLinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/android_base"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <com.chinausky.lanbowan.view.custom.ClickLinearLayout
+            android:id="@+id/ll_rent_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/owner_feedback"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="业主反馈"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:src="@drawable/rent_phone_selected"/>
+        </com.chinausky.lanbowan.view.custom.ClickLinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/android_base"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.chinausky.lanbowan.view.custom.ClickLinearLayout
+                android:id="@+id/ll_common_question"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/convenience_guide"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="便民指南"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/common_question_selected"/>
+            </com.chinausky.lanbowan.view.custom.ClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/android_base"/>
+
+            <com.chinausky.lanbowan.view.custom.ClickLinearLayout
+                android:id="@+id/ll_user_know"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/property_permits"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="产权证办理"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/user_know_selected"/>
+            </com.chinausky.lanbowan.view.custom.ClickLinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/android_base"/>
+
+</LinearLayout>

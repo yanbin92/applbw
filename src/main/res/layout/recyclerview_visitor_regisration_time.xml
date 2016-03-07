@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/visitor_registration_arrive_date_ll"
+        android:background="@drawable/edit_text_rim"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/date"/>
+
+        <TextView
+            android:id="@+id/visitor_registration_arrive_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请点击输入时间"/>
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/base"-->
+        <!--android:gravity="center"-->
+        <!--android:text="离开时间"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="14sp"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/edit_text_rim"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/visitor_registration_leave_date_btn"-->
+    <!--style="?android:attr/borderlessButtonStyle"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:background="@drawable/date"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/visitor_registration_leave_date_tv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="请点击左边图标输入"/>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_calling" >
+
+    <include
+        android:id="@+id/incomingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        layout="@layout/call_active_control_row" />
+
+    <RelativeLayout
+        android:id="@+id/incomingPortraitRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/incomingInfo"
+        android:layout_marginBottom="270dp" >
+
+        <TextView
+            android:id="@+id/incomingNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/incomingPortraitImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_call_default_portrait" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/incomingMenuLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp" >
+
+                <Button
+                    android:id="@+id/incomingVideoAnswerButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/call_operator_accept_video"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:background="@color/visitor_history_time"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/incomingAudioAnswerButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/call_operator_accept_audio"
+                    android:background="@color/visitor_history_time"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/incomingRejectButton"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_weight="1"
+                android:text="@string/call_operator_hangup"
+                android:layout_marginTop="1dp"
+                android:background="@color/visitor_history_time"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/incomingMenuLinearLayout"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/incomingUnlockButton"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/call_operator_unlock" />
+
+            <Button
+                android:id="@+id/incomingSnapshotButton"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="@string/call_operator_snapshot" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

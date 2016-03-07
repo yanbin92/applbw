@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/visitor_history_time"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:id="@+id/visitor_history_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

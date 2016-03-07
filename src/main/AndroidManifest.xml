@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.chinausky.lanbowan"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 允许应用程序改变网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!-- 允许应用程序改变WIFI连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 允许应用程序访问有关的网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许应用程序访问WIFI网卡的网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 允许应用程序完全使用网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 星网锐捷权限 -->
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- Needed to allow EvideoVoip to install on tablets, since android.permission.CALL_PHONE implies android.hardware.telephony is required -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- Needed to allow EvideoVoip to install on tablets, since android.permission.CAMERA implies android.hardware.camera and android.hardware.camera.autofocus are required -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- Needed to store received images if the user wants to -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Needed to use our own Contact editor -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <!-- Needed to route the audio to the bluetooth headset if available -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <!-- Needed to pre fill the wizard email field (only if enabled in custom settings) -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!--爱谱华顿权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--小米推送-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!--小米更新-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.xiaomi.market.sdk.UPDATE" />
+
+    <permission
+        android:name="com.chinausky.lanbowan.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.chinausky.lanbowan.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".controller.activity.start.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".controller.activity.start.LoadingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".controller.activity.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.myparking.MyParkingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.maintenance.MaintenanceServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".controller.activity.visitor.VisitorRegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".controller.activity.visitor.VisitorHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.visitor.VisitorInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.maintenance.MaintenanceHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.maintenance.MaintenanceInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.photo.OwnerServiceActivity"
+            android:label="@string/title_activity_owner_service"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.help.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.photo.ChoosePicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.photo.ImageGridActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.photo.PhotoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".controller.activity.login.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".controller.activity.me.MeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".controller.activity.photo.HeeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".controller.activity.login.WangjimimaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+
+        <!--爱谱华顿权限-->
+        <activity
+            android:name=".aipuwaton.CameraActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".aipuwaton.AiPuWaTonActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 星网锐捷 -->
+        <activity
+            android:name=".evideo.EvideoMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".evideo.AccountManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".evideo.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".evideo.call.IncomingCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".evideo.call.InCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <service
+            android:name="com.evideo.voip.EvideoVoipService"
+            android:label="EvideoVoipService"/>
+
+        <receiver android:name="com.evideo.voip.NetworkManager">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.evideo.voip.PhoneStateChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.evideo.voip.KeepAliveHandler"/>
+
+        <activity android:name=".controller.activity.myparking.MyParkingHomeActivity"/>
+        <activity android:name=".controller.activity.help.EstateCenterActivity"/>
+        <activity android:name=".controller.activity.help.PropertyPermitsActivity"/>
+        <activity android:name=".controller.activity.help.RoomDeliverActivity"/>
+        <activity android:name=".controller.activity.help.OwnerKnowsActivity"/>
+        <activity android:name=".controller.activity.help.OwnerFeedbackActivity"/>
+        <activity android:name=".controller.activity.help.ConvenienceGuideActivity"/>
+
+        <!--小米推送-->
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"/>
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:exported="true"/>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".model.broadcastreceiver.XiaoMiMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+
+        <!--小米跟新-->
+        <receiver android:name="com.xiaomi.market.sdk.DownloadCompleteReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
